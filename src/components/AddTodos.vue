@@ -12,7 +12,7 @@ import { store } from '../store';
     methods:{
         addTodo() {
             if (this.newTodo) {
-              store.addTodos({title: this.newTodo, done: false});
+              store.addTodo(this.newTodo);
               this.newTodo='';  
             }
           }
